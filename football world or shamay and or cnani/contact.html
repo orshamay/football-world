@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+    <title>עולם הכדורגל</title>
+    <link rel="shortcut icon" type="image/png" href="../images/icon.png" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+    <link href="styles/reset.css" rel="stylesheet" />
+
+    <link href="../styles/all.css" rel="stylesheet" />
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+
+
+</head>
+<body>
+    <div id="container" >
+        
+        <header>
+            <h1>
+                עולם הכדורגל
+            </h1>
+
+            <nav>
+                <ul>
+                    <li><a href="../main.html">בית</a></li>
+                    <li><a href="../אודות/about.html">אודות</a></li>
+                    <li><a href="../עמוד 1 כוכבי עבר/past1.html">כוכבי עבר</a></li>
+                    <li><a href="../עמוד 2 כוכבי הווה/now2.html">כוכבי הווה</a></li>
+                    <li><a href="../map/map.html">מפת אתר</a></li>
+                    <li><a href="../contact.html">צור קשר</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <fieldset>
+            <form name="contactUs" onsubmit="return formValidation()" method="post" aria-labelledby="label">
+                <p>שדות המסומנים בסימון כוכבית הינן שדות חובה</p>
+                
+                <br />
+                <label for="name">* שם פרטי:</label>
+                <input type="text" id="name" name="שם פרטי" required aria-invalid="true" aria-describedby="nameLastnameError" />
+                <br />
+                <label for="lastName">* שם משפחה:</label>
+                <input type="text" id="lastName" name="שם משפחה" required aria-invalid="true" aria-describedby="nameLastnameError" />
+                <br />        
+                <br />
+                <label for="phoneNumber">* מספר טלפון נייד המכיל 10 ספרות ללא מקפים:</label>
+                <input type="text" id="phoneNumber" name="מספר טלפון נייד" required aria-invalid="true" aria-describedby="numberError" />
+                <br />                
+                <br />
+                <label for="contactEmail">* כתובת דואר-אלקטרוני:</label>
+                <input type="email" id="contactEmail" name="כתובת דואר-אלקטרוני" required aria-invalid="true" aria-describedby="emailError" />
+                <br />
+                <label for="contactEmailValidation">* אימות כתובת דואר-אלקטרוני - יש להקליד שוב:</label>
+                <input type="email" id="contactEmailValidation" onpaste="return false;" ondrop="return false;" autocomplete="off" name="אימות כתובת דואר-אלקטרוני" required aria-invalid="true" aria-describedby="emailError" />
+                <br />                
+                <br />
+                <label for="textArea">* תוכן הפניה:</label>
+                <textarea id="textArea" row="10" name="textArea" required aria-invalid="true" aria-describedby="textAreaError"></textarea>
+                <br />               
+                <br />
+                <input type="button" id="cleanUp" value="נקה טופס" />
+                <input type="submit" id="submit" value="העבר פניה" />               
+            </form>
+        </fieldset>
+
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="../main.html">בית</a></li>
+                    <li><a href="../אודות/about.html">אודות</a></li>
+                    <li><a href="../עמוד 1 כוכבי עבר/past1.html">כוכבי עבר</a></li>
+                    <li><a href="../עמוד 2 כוכבי הווה/now2.html">כוכבי הווה</a></li>
+                    <li><a href="../map/map.html">מפת אתר</a></li>
+                    <li><a href="../contact.html">צור קשר</a></li>
+                </ul>
+            </nav>
+
+        </footer>
+    </div>
+</body>
+</html>

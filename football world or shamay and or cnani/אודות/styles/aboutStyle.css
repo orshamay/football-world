@@ -1,0 +1,12 @@
+﻿body {
+    direction: rtl;
+}
+#about {
+    font-size:2rem;
+    color:darkred;
+    text-align: center;
+}
+ #tohen {
+     font-size:1rem;
+   
+ }
